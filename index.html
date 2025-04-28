@@ -105,6 +105,20 @@
       box-shadow: 0 0 12px #C49C48;
       background-color: #d4ac4b;
     }
+    @media (max-width: 768px) {
+    .buttons {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem; /* Space between buttons */
+    }
+
+    .buttons a {
+      width: 80%; /* Buttons wider on mobile */
+      text-align: center;
+    }
+  }
+
     section {
       background: linear-gradient(to bottom right, #ffffff, #f9f9f9);
       border: 1px solid #f0d88b;
