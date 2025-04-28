@@ -19,15 +19,16 @@
   	opacity: 1; /* Fade to full visibility */
     }
     .divider-line {
-  background-color: #333333; /* make the full divider background dark */
+  background-color: #333333; 
   padding: 10px 0; /* give some height/spacing */
   text-align: center;
 }
 
 .divider-line hr {
+  height: 3px;
   border: none;
-  border-top: 2px solid #C49C48; /* gold line */
-  width: 1200px; /* centered gold line */
+  background: linear-gradient(to right, transparent, #C49C48, transparent);
+  width: 600px;
   margin: auto;
 }
     html {
@@ -384,8 +385,11 @@ footer a {
 <style>
 .gold-underline {
   display: inline-block;
-  border-bottom: 3px solid #C49C48;
   padding-bottom: 6px;
+  background-image: linear-gradient(to right, transparent, #C49C48,  transparent);
+  background-repeat: no-repeat;
+  background-size: 100% 3px;
+  background-position: 0 100%;
 }
   
 .background-sections {
